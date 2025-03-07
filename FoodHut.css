@@ -2,6 +2,7 @@
     font-family:'Sofia Pro';
     src: url(fonts/Sofia\ Pro\ UltraLight.ttf);
   }
+body{overflow-x: hidden;}
 .first{
     background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
     background-size:cover;
@@ -10,6 +11,16 @@
     width: 100%;
     height:100%;
 }
+#links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 660px;
+    height: 24px;
+    gap: 50px;
+    margin-top: 2%;
+    margin-right: 20%;
+}
 .section1{
     display: flex;
     flex-direction: row;
@@ -17,10 +28,10 @@
     align-items: center;
 }
 #logo{
-    width: 18%;
-    height: 8%;
-    margin-left: 24px;
-    margin-top: 24px;
+    width: 121px;
+    height:78px;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 #sandwich{
     width: 36px;
@@ -58,8 +69,6 @@
     margin-left: -5px;
 }
 #text_1{
-    width: 379px;
-    height: 81px;
     margin-top: 29.8px;
     margin-left: 24px;
     font-family: 'Sofia Pro';
@@ -69,24 +78,24 @@
     letter-spacing: -1%;
     opacity: 80%;
 }
+#searchtext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
 #part2-1{
     display: flex;
     flex-direction: row;
-    width: 183px;
-    height: 52px;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 }
-#play{
-    background-color: rgb(255, 255, 255);
-    width: 34%;
-    height: 114%;
-    border-radius: 100%;
-    border-color: #000000;
-}
+
 #WatchVideo{
-    width: 110px;
-    height: 26px;
+    /* width: 110px;
+    height: 26px; */
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 17px;
@@ -113,15 +122,42 @@
     line-height: 24.16px;
     letter-spacing: 0px;
 }
+#red_button_2{
+    background-color:rgba(245, 71, 72, 1);
+    color: white;
+    width: 162px;
+    height: 45px;
+    border-radius: 100px;
+    border: 0;
+    font-family: 'Sofia Pro';
+    font-size: 18px;
+    line-height: 24.16px;
+    letter-spacing: 0px;
+    margin-top: 2%;
+    margin-left: -36%;
+    margin-right: 6%;
+
+}
+#Group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 1%;
+}
+#girl img{
+    width: 105%;
+    height: 85%;
+}
 #search_box input{
-    width: 380px;
-    height: 54px;
+    width: 33vw;
+    height: 8vh;
     border-radius: 42px;
     border: 0.86px;
     border: 0.86px solid #FFFFFF99;
     backdrop-filter: blur(8px);
     background: #FFFFFF26;
-    border-color: black ;
+    border-color: rgb(117, 117, 117) ;
     margin-left: 24px;
     margin-right: 24px;
 }
@@ -142,38 +178,15 @@
     margin-top: 32px;
     margin-bottom: 30px;
 }
-#search img{
-    width: 42px;
-    height: 42px;
-    margin-left: -70px;
+#search button{
+    width: 45px;
+    height: 45px;
+    background-color: #FDC55E;
+    margin-left: -72px;
     position: relative;
+    border-radius: 100%;
 }
-@media (min-width:1440px){
-    .first{
-        background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
-        height:100%;
-    }
-    #search{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:flex-start;
-        margin-top: 32px;
-        margin-bottom: 30px;
-        
-    }
-    .part2{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 90px;
-        justify-content:flex-start;
-    }
 
-}
 .secound{
     background-color: white;
     background-size:cover;
@@ -181,10 +194,17 @@
     background-position: center;
     width: 100%;
     height:100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.secound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #Today{
-    width: 353px;
-    height: 134px;
+    /* width: 353px;
+    height: 134px; */
     font-family: 'Sofia Pro';
     font-weight: 700;
     font-size: 48px;
@@ -207,19 +227,51 @@
     margin-right: 1%;
 }
 #pic_1 img{
-    width: 310px;
+    width: 22vw;
     height: 516px;
 }
 #pic_2 img{
-    width: 310px;
+    width: 22vw;
     height: 516px;
 }
 #pic_3 img{
-    width: 310px;
+    width: 22vw;
     height: 516px;
 }
 #pic_4 img{
-    width: 310px;
+    width: 22vw;
+    height: 516px;
+}
+#pic_1_2 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_2_2 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_3_2 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_4_2 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_1_3 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_2_3 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_3_3 img{
+    width: 22vw;
+    height: 516px;
+}
+#pic_4_3 img{
+    width: 22vw;
     height: 516px;
 }
 #foods{
@@ -227,13 +279,24 @@
     flex-direction: row;
     justify-content: center;
     gap: 2%;
-
+    margin-left: 1.5%;
 }
-.secound{
+#foods_2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    margin-left: 1.5%;
+    margin-bottom: 10%;
 }
+#foods_3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    margin-left: 1.5%;
+}
+
 .chef{
     display: flex;
     flex-direction: row;
@@ -244,7 +307,7 @@
     width: 692px;
 }
 #img_chef img {
-    height: 661px;
+    height: 780px;
     width: 692px;
     overflow: hidden;
     margin-left: -15%;
@@ -252,21 +315,24 @@
 #item_1{
     display: flex;
     flex-direction: column;
+    gap: 2%;
 }
 #item_2{
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 .items{
     display: flex;
     flex-direction: row;
+    gap: 40%;
 }
 #item_1_1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 13px;
 }
 #item_1_2{
     display: flex;
@@ -319,6 +385,12 @@
     height: 24px;
     text-align: left;
 }
+#play{
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    background-color: #F54748;
+}
 #text_part{
     width: 40%;
     display: flex;
@@ -355,4 +427,373 @@
     font-family: 'Sofia Pro';
     color: white;
     font-size: 18px;
+    margin-top: 0%;
+}
+#title_3{
+    width: 643px;
+    height: 134px;
+    font-family: 'Sofia Pro';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    letter-spacing: 0%;
+}
+#group__3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+    gap: 18px;
+}
+#googleApps{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+#googleApps_1{
+    width: 120px;
+    height: 40px;
+}
+#googleApps_2{
+    width: 120px;
+    height: 40px;
+}
+#p_3{
+    width: 550px;
+    height: 72px;
+    font-family: 'Sofia Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.16px;
+    letter-spacing: 0%;
+}    
+.types{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    margin-bottom: 5%;
+}
+.types button{
+    width: 98px;
+    height: 44px;
+    border-radius: 100px;
+    padding: 12px;
+    color: #000000;
+    border: 10px;
+    border-color: #858484;
+}
+.types button:hover{
+    width: 98px;
+    height: 44px;
+    border-radius: 100px;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #F54748;
+    border: 10px;
+}
+#group_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Menue{
+    width: 653px;
+    height: 134px;
+    font-family: 'Sofia Pro';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.fourth{
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FDC55E 73.18%); */
+    width: 100%;
+    height: 632px;
+    /* opacity: 10%; */
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#chef_man img{
+    width: 80%;
+    height: 80%;
+    margin-right: 20%;
+}
+@media (min-width:428px)
+{
+    #sandwich{
+        display: none;
+    }
+}
+
+@media (max-width:428px){
+    body{overflow-x: hidden;}
+    .first{
+        background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height:100vh;
+    }
+    .secound{
+        background-color: white;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height:100%;
+    }
+    #foods{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    #girl{
+        display: none;
+    }
+    #pic_2{
+        display: none;
+    }
+    #pic_4{
+        display: none;
+    }
+    #pic_3{
+        display: none;
+    }
+    #logo{
+        width: 97px;
+        height:62px;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+    #sandwich{
+        width: 36px;
+        height:27px ;
+        margin-right: 6%;
+        margin-top: 5%;
+    }
+    #red_button_2{
+        display: none;
+    }
+    #links{
+        display: none;
+    }
+    #search{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-start;
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+    .part2{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 90px;
+        justify-content:space-between;
+        align-items: center;
+        margin-left: 13%;
+    }
+    .chef{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Today{
+        font-family: 'Sofia Pro';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 67.2px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 44%;
+        margin-bottom: 2%;
+    }
+    #lorem{
+        font-family: 'Sofia Pro';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24.16px;
+        letter-spacing: 0px;
+        text-align: center;
+        opacity: 80%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    #img_chef {
+        height: 513px;
+        width: 458px;
+    }
+    #img_chef img {
+        height: 760px;
+        width: 610px;
+        margin-left: 3%;
+        margin-top: -12%;
+    }
+    .secound{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #text_part{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+        /* margin-right: 10%;
+        margin-left: -12%;
+        margin-top: 6%; */
+    
+    }
+    #t_chef{
+        font-family: 'Sofia Pro';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62.35px;
+        letter-spacing: 0%;
+        width: 380px;
+        height: 186px;
+        margin-left: 48%;
+    }
+    #p_chef{
+        font-family: 'Sofia Pro';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24.16px;
+        letter-spacing: 0%;
+        width: 381px;
+        height: 120px;
+        margin-left: 50%;
+        margin-top: 15%;
+
+    }
+    #search_box input{
+        width: 84vw;
+        height: 9.5vh;
+        border-radius: 42px;
+        border: 0.86px;
+        border: 0.86px solid #FFFFFF99;
+        backdrop-filter: blur(8px);
+        background: #FFFFFF26;
+        border-color: rgb(117, 117, 117) ;
+        /* margin-left: 24px;
+        margin-right: 24px; */
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        margin-top: 22%;
+        margin-left: -70%;
+    }
+    #item_1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #item_2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #AboutUs{
+        background: #F54748;
+        width: 114px;
+        height: 45px;
+        border-radius: 100px;
+        border-color: white;
+        font-family: 'Sofia Pro';
+        color: white;
+        font-size: 18px;
+        margin-top: 10%;
+        margin-left: -90%;
+    }
+    #Menue{
+        width: 363px;
+        height: 201px;
+        font-family: 'Sofia Pro';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 67.2px;
+        letter-spacing: 0px;
+        text-align: center;
+        /* margin-bottom: 5%;
+        margin-top: 5%; */
+    }
+    #pic_1 img{
+        width: 70vw;
+        height: 516px;
+    }
+    #pic_2_2 img{
+        display: none;
+    }
+    #pic_3_2 img{
+        display: none;
+    }
+    #pic_4_2 img{
+        display: none;
+    }
+    #pic_1_3 img{
+        display: none;
+    }
+    #pic_2_3 img{
+        display: none;
+    }
+    #pic_3_3 img{
+        display: none;
+    }
+    #pic_4_3 img{
+        display: none;
+    }
+    #pic_1_2 img{
+        width: 70vw;
+        height: 516px;
+    }
+    #Dinner{
+        display: none;
+    }
+    #Maxican{
+        display: none;
+    }
+    #Italian{
+        display: none;
+    }
+    #Desserts{
+        display: none;
+    }
+    #Drinks{
+        display: none;
+    }
+    #chef_man{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #chef_man img{
+        width: 450px;
+        height: 500px;
+    }
+    .fourth{
+        
+    }
+
 }
